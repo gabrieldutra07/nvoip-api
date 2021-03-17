@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<form action="processa.php" method="POST">
+<br>
+
+    <div class="container">
+        <h2>Realizar chamada</h2>
+        <div id="panel" class="panel panel-default no-padding" >
+            <div class="panel-body no-padding">
+
+                    <div class="row-fluid">
+                        <div id="colImg" class="col-md-2 col-sm-2 col-xs-12 col-img">
+                            <!-- Background image -->
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12  padding border-right">
+
+                            <label label-default="" for="" name="caller"><span class="badge"></span></label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Usuário SIP" name="caller">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Número de destino" name="called">
+                                </div>
+                            </div>
+
+                            <div class="row-fluid"><br>
+                                <button class="btn btn-primary enviar" type="submit">Discar</button>
+
+
+                            </div><!-- End of .container -->
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+</form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="processasms.php" method="POST">
+
+    <div class="container">
+        <h2>Disparo de SMS</h2>
+        <div id="painel" class="panel panel-default no-padding" >
+            <div class="panel-body no-padding">
+
+                <div class="row-fluid">
+                    <div id="colIimg" class="col-md-2 col-sm-2 col-xs-12 col-img">
+                        <!-- Background image -->
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-xs-12  padding border-right">
+
+                        <label><span class="badge"></span></label>
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Número de destino" name="calledsms">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Digite a mensagem" name="msg">
+                            </div>
+                        </div>
+
+                        <div class="row-fluid"><br>
+                            <button class="btn btn-primary enviar" type="submit">Disparar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form action="processatorpedo.php" method="POST">
+        <div class="container">
+            <h2>Disparo de torpedo de voz</h2>
+            <div id="paisnel" class="panel panel-default no-padding" >
+                <div class="panel-body no-padding">
+
+                    <div class="row-fluid">
+                        <div id="colsIimg" class="col-md-2 col-sm-2 col-xs-12 col-img">
+                            <!-- Background image -->
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12  padding border-right">
+
+                            <label><span class="badge"></span></label>
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Número de destino" name="calledtorpedo">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Digite a mensagem" name="msgtorpedo">
+                                </div>
+                            </div>
+
+                            <div class="row-fluid"><br>
+                                <button class="btn btn-primary enviar" type="submit">Disparar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+
+
+</body>
+</html>
