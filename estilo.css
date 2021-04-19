@@ -48,10 +48,11 @@ select {
 
 
 .limpar,
-.enviar {
+.enviar1 {
     float: right;
     margin: 20px 5px 0 0;
 }
+
 
 .enviar {
     margin: 20px 0 0 0;
